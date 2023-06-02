@@ -20,8 +20,12 @@
                     <tr>
                         <td><a href="{{ drink.url }}">{{ drink.title }}</a></td>
                         <td>{{ drink.postDate | date('M Y') }}</td>
-                        {# {% set style = drink.drinkStyle.one() %} #}
-                        <td><a href="{{ drink.url() }}">{{ drink.drinkStyle.one() }}</a></td>
+                        {% set style = drink.drinkStyle.one() %}
+                        {% if style %}
+                            <td><a href="{{ style.url }}">{{ style.title }}</a></td>
+                        {% else %}
+                            <td>-</td>
+                        {% endif %}
                     </tr>
                 {% endfor %}
             </table>
