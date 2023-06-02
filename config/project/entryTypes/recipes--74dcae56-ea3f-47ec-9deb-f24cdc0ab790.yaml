@@ -1,0 +1,67 @@
+fieldLayouts:
+  37916757-8ec4-4862-95ae-bc99dd966560:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Recipe Name'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a76d9af1-58bf-4477-813c-93de49b8d969
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 06375def-bede-411c-8724-27a02d2b2aad # Drink Style
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc327983-27ef-430c-a324-4575abf8b6f4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c5a7e16-1f33-43bf-9206-34dc0d434109 # Recipe Contents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 553a1717-4f15-4c23-93a4-29675157ca4f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fc53cf1d-1c96-46f8-99d9-a4c5b1fb6ed9
+        userCondition: null
+handle: recipes
+hasTitleField: true
+name: Recipes
+section: 9c5aecd7-73ef-460b-83e8-771c33c4a78a # Recipes
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

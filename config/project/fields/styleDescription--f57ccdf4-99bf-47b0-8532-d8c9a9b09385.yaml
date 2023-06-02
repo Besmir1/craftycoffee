@@ -1,0 +1,19 @@
+columnSuffix: yrizugmz
+contentColumnType: text
+fieldGroup: 948f033a-b8d5-4c0b-a877-ff7e0633d5e5 # Styles
+handle: styleDescription
+instructions: null
+name: 'Style Description'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

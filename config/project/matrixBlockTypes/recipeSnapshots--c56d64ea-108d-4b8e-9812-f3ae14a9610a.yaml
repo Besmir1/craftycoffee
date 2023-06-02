@@ -1,0 +1,86 @@
+field: 0c5a7e16-1f33-43bf-9206-34dc0d434109 # Recipe Contents
+fieldLayouts:
+  7cbb7780-500d-44c6-ae73-bd87a4c1b3d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fbdf1ccf-59cd-48a8-af34-b7bd4019f3a2 # Snapshot Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c9439e3-72b6-4322-bacf-8cb588994b55
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14d95306-ba13-4389-a140-679b37b3a539 # Snap Buletpoints
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7e593be-b5eb-4698-be84-6f2f6a1edf72
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5ec3e0d8-fc00-4623-baa9-874eff468cfd
+        userCondition: null
+fields:
+  14d95306-ba13-4389-a140-679b37b3a539: # Snap Buletpoints
+    columnSuffix: afwjckki
+    contentColumnType: text
+    fieldGroup: null
+    handle: snapBuletpoints
+    instructions: null
+    name: 'Snap Buletpoints'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  fbdf1ccf-59cd-48a8-af34-b7bd4019f3a2: # Snapshot Title
+    columnSuffix: bfmeoold
+    contentColumnType: text
+    fieldGroup: null
+    handle: snapshotTitle
+    instructions: null
+    name: 'Snapshot Title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: recipeSnapshots
+name: 'Recipe Snapshots'
+sortOrder: 6

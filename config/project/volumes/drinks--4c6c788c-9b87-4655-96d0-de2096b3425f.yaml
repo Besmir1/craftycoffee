@@ -1,0 +1,8 @@
+fs: drinks
+handle: drinks
+name: Drinks
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

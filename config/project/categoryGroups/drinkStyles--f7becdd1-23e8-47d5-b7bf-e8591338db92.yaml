@@ -1,0 +1,58 @@
+defaultPlacement: end
+fieldLayouts:
+  96c6a208-e3a5-4e8e-b9a2-ac0b9b3a453e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: c7e362be-284f-4751-af7a-8ae7d26a0080
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f57ccdf4-99bf-47b0-8532-d8c9a9b09385 # Style Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd5f49a3-54cc-4fe9-ac17-94b2a839e942
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 30291c54-5bca-43fd-a41f-b6affd3972f8
+        userCondition: null
+handle: drinkStyles
+name: 'Drink Styles'
+siteSettings:
+  77341f06-5ff0-42b5-b7ee-0e445b26d35c: # Crafty Coffee
+    hasUrls: true
+    template: styles/_entry
+    uriFormat: 'styles/{slug}'
+structure:
+  maxLevels: 5
+  uid: 4cbb21e3-bdb2-4a3f-9d4c-4a8666f96acb

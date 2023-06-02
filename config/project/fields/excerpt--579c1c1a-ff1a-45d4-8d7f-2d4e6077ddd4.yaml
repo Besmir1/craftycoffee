@@ -1,0 +1,19 @@
+columnSuffix: ezpsorqg
+contentColumnType: text
+fieldGroup: 170dd199-0041-4c1e-91ab-800984809c00 # Common
+handle: excerpt
+instructions: null
+name: Excerpt
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,43 @@
+fieldLayouts:
+  93ff077e-6d04-488f-b4c5-7036f117140e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 15730233-59ac-4668-8945-a78ea4fa198a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7b58ba93-8d15-48eb-b1a2-e2da34679ae4
+        userCondition: null
+handle: espresso
+hasTitleField: true
+name: Espresso
+section: a4016edf-909b-47de-8883-3c83ce2d8781 # Drinks 
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

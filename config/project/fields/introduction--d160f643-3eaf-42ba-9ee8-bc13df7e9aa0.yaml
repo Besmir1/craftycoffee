@@ -1,0 +1,19 @@
+columnSuffix: mzysglls
+contentColumnType: text
+fieldGroup: 73bea0d2-44f6-453a-9481-508bf7f21564 # Drinks
+handle: introduction
+instructions: 'Short sentence at the top of the drink page'
+name: Introduction
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

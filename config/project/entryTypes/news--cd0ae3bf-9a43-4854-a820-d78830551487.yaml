@@ -1,0 +1,67 @@
+fieldLayouts:
+  edf8f4ba-bfd6-4483-9b69-5e85574ec94f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Headline
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 02bd845b-6e68-4728-b5e5-65c0e57f8ca4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 579c1c1a-ff1a-45d4-8d7f-2d4e6077ddd4 # Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20a2ae83-9e98-43d2-a882-3423ac642127
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f0202858-5294-4d9b-963c-94dae1a2a631 # News Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4d2604c-5396-4764-a619-8959671b85b7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'News Details'
+        uid: bb846bb5-5549-4986-b715-5c3b3818519b
+        userCondition: null
+handle: news
+hasTitleField: true
+name: News
+section: 249b3060-0821-4cf5-802a-59e30668c540 # News
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

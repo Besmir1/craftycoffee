@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: recipes
+name: Recipes
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  77341f06-5ff0-42b5-b7ee-0e445b26d35c: # Crafty Coffee
+    enabledByDefault: true
+    hasUrls: true
+    template: recipes/_entry
+    uriFormat: 'recipes/{slug}'
+type: channel
