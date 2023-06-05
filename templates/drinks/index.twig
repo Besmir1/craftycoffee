@@ -21,6 +21,7 @@
                         <td><a href="{{ drink.url }}">{{ drink.title }}</a></td>
                         <td>{{ drink.postDate | date('M Y') }}</td>
                         {% set style = drink.drinkStyle.one() %}
+                        {# Needed to make a "if" loop to iterat on eachone because if an item have the NULL url it throws an error #}
                         {% if style %}
                             <td><a href="{{ style.url }}">{{ style.title }}</a></td>
                         {% else %}

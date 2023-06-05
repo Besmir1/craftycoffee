@@ -28,9 +28,11 @@
 
 				{{ entry.pageCopy }}
 
+				{% set drinkRecipe = entry.drinkRecipe.one() %}
+
 				<p>
-					<a href="../recipes/recipe-detail.html" class="button primary small radius">Make
-						<i>Perfect Espresso</i>
+					<a href="{{ drinkRecipe.url }}" class="button primary small radius">Make
+						<i>{{ entry.title }}</i>
 						at Home</a>
 				</p>
 			</div>
