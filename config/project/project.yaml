@@ -1,4 +1,4 @@
-dateModified: 1685716767
+dateModified: 1686034702
 elementSources:
   craft\elements\Category:
     -
@@ -89,6 +89,7 @@ meta:
     35d59411-75b6-49dc-b430-da65d27ba9af: 'Body Content' # Body Content
     43f116e7-1479-4e66-a56c-c13ebba1fc43: 'Crafty Coffee' # Crafty Coffee
     46b80792-76a7-41fd-a5cc-3dce0920c6be: Image # Image
+    59daae8b-aa35-4ff8-942e-1adb8781de8b: Contact # Contact
     73bea0d2-44f6-453a-9481-508bf7f21564: Drinks # Drinks
     74dcae56-ea3f-47ec-9deb-f24cdc0ab790: Recipes # Recipes
     75f1578d-b430-4b03-bb60-80d880ed64b8: 'Recipe Tips' # Recipe Tips
@@ -111,6 +112,7 @@ meta:
     b0a29af4-d3fe-4702-962e-2c9939f54045: 'Thumb 840x200' # Thumb 840x200
     c7f8fc9d-6463-40c0-9c72-22605c2f9c4a: 'Image Caption' # Image Caption
     c56d64ea-108d-4b8e-9812-f3ae14a9610a: 'Recipe Snapshots' # Recipe Snapshots
+    c62e8b1a-35c7-444b-b3bb-bffb6b25ce5b: 'Contact Us' # Contact Us
     cbe8ca8b-fd54-4f3f-8c40-275fdcc5bbbb: 'Snapshot Content' # Snapshot Content
     cd0ae3bf-9a43-4854-a820-d78830551487: News # News
     d160f643-3eaf-42ba-9ee8-bc13df7e9aa0: Introduction # Introduction
@@ -122,6 +124,10 @@ meta:
     f57ccdf4-99bf-47b0-8532-d8c9a9b09385: 'Style Description' # Style Description
     fbdf1ccf-59cd-48a8-af34-b7bd4019f3a2: 'Snapshot Title' # Snapshot Title
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
