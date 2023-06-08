@@ -1,4 +1,6 @@
 {% extends "_layouts/main" %}
+{% import "macro/_self" as macros %}
+{% from "macro/_self" import input as input_field, textarea %}
 
 {% block main %}
     <div class="full-bleed-header" style="background-size: 100%; height: 200px; background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/images/drinks/espresso-shot.jpg); background-repeat: no-repeat, repeat;">
@@ -21,7 +23,7 @@
                         <td><a href="{{ drink.url }}">{{ drink.title }}</a></td>
                         <td>{{ drink.postDate | date('M Y') }}</td>
                         {% set style = drink.drinkStyle.one() %}
-                        {# Needed to make a "if" loop to iterat on eachone because if an item have the NULL url it throws an error #}
+                        {# Needed to make a "if" loop to iterat on each one because if an item have the NULL url it throws an error  #}
                         {% if style %}
                             <td><a href="{{ style.url }}">{{ style.title }}</a></td>
                         {% else %}
@@ -30,6 +32,30 @@
                     </tr>
                 {% endfor %}
             </table>
+        </div>
+    </div>
+
+    {# {% block post %}
+        <article>
+            <header>{{ post.title }}</header>
+            <section>{{ post.text }}</section>
+        </article>
+    {% endblock %} #}
+
+    <div class="row">
+        <div class="large-6 small-12 columns">
+            <h3>Testing Macro Functions</h3>
+            <ul class="news-listing">
+                {{ macros.greet('Filan Fisteku') }}  
+            </ul>
+            <ul class="news-listing">
+                <p>{{ macros.input('username') }}</p>
+                <p>{{ macros.input('password', null, 'password') }}</p>
+            </ul>
+            <ul class="news-listing">
+                <p>{{ input_field('password', '', 'password') }}</p>
+                <p>{{ textarea('comment') }}</p>
+            </ul>
         </div>
     </div>
 {% endblock %}

@@ -1,5 +1,7 @@
 {% extends "_layouts/main" %}
 {% import "macro/_self" as macros %}
+{% from "macro/_self" import input as input_field, textarea %}
+
 
 {% block main %}
     <div class="full-bleed-header" style="background-size: 100%; height: 300px; background-image:url(/images/coffee-shop.jpg)">
@@ -12,10 +14,6 @@
         </div>
     </div>
 
-    <br>
-    {{ macros.greet('Filan Fisteku') }}
-    <br>
-    
     <div class="row">
         <div class="large-6 small-12 columns">
         <h3>Favorite Drinks</h3>
@@ -39,6 +37,25 @@
                 {% for item in craft.entries.section('news').limit(10).all() %}
                     <li><a href="{{ item.url }}">{{ item.excerpt }} &raquo;</a></li>
                 {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="row">
+        <div class="large-6 small-12 columns">
+            <h3>Testing Macro Function</h3>
+            {# <ul class="news-listing">
+                {{ macros.greet('Filan Fisteku') }}  
+            </ul> #}
+            <ul class="news-listing">
+                <p>{{ macros.input('username') }}</p>
+                <p>{{ macros.input('password', null, 'password') }}</p>
+            </ul>
+            <ul class="news-listing">
+                <p>{{ input_field('password', '', 'password') }}</p>
+                <p>{{ textarea('comment') }}</p>
             </ul>
         </div>
     </div>

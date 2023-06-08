@@ -1,4 +1,4 @@
-dateModified: 1686034702
+dateModified: 1686120844
 elementSources:
   craft\elements\Category:
     -
@@ -124,10 +124,6 @@ meta:
     f57ccdf4-99bf-47b0-8532-d8c9a9b09385: 'Style Description' # Style Description
     fbdf1ccf-59cd-48a8-af34-b7bd4019f3a2: 'Snapshot Title' # Snapshot Title
 plugins:
-  contact-form:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
