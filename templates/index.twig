@@ -40,15 +40,15 @@
             </ul>
         </div>
     </div>
-
-    <br>
     
+    <br>
+
     <div class="row">
         <div class="large-6 small-12 columns">
             <h3>Testing Macro Function</h3>
             {# <ul class="news-listing">
                 {{ macros.greet('Filan Fisteku') }}  
-            </ul> #}
+            </ul>
             <ul class="news-listing">
                 <p>{{ macros.input('username') }}</p>
                 <p>{{ macros.input('password', null, 'password') }}</p>
@@ -57,6 +57,103 @@
                 <p>{{ input_field('password', '', 'password') }}</p>
                 <p>{{ textarea('comment') }}</p>
             </ul>
+            <br>
+            <form id="my-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button type="button" id="load-button">Load Data</button>
+            </form>
+            <div id="result">Initial content</div> 
+            
+            <script>
+                document.getElementById('load-button').addEventListener('click', function() {
+                    var form = document.getElementById('my-form');
+                    var formData = new FormData(form);
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.onreadystatechange = function() {
+                        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                            // Update content on successful response
+                            document.getElementById('result').innerHTML = xhr.responseText;
+                        }
+                    };
+                    xhr.open('POST', '/ajax-endpoint', true);
+                    xhr.send(formData);
+                });
+            </script> #}
+            
+            <br>
+            <div id="result">Initial content</div>
+
+            <!-- GET request -->
+            <button id="get-button">GET Data</button>
+
+            <!-- POST request -->
+            <form id="post-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="button" id="post-button">POST Data</button>
+            </form>
+
+            <!-- PUT request -->
+            <form id="put-form">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <button type="button" id="put-button">PUT Data</button>
+            </form>
+
+            <!-- DELETE request -->
+            <button type="button" id="delete-button">DELETE Data</button>
+
+            <script>
+                // GET request
+                document.getElementById('get-button').addEventListener('click', function() {
+                    $.ajax({
+                        url: 'https://reqres.in/api/users',
+                        type: 'GET',
+                        success: function(response) {
+                            document.getElementById('result').innerHTML = response;
+                        }
+                    });
+                });
+
+                // POST request
+                document.getElementById('post-button').addEventListener('click', function() {
+                    var formData = $('#post-form').serialize();
+                    $.ajax({
+                        url: 'https://reqres.in/api/users',
+                        type: 'POST',
+                        data: formData,
+                        success: function(response) {
+                            document.getElementById('result').innerHTML = response;
+                        }
+                    });
+                });
+
+                // PUT request
+                document.getElementById('put-button').addEventListener('click', function() {
+                    var formData = $('#put-form').serialize();
+                    $.ajax({
+                        url: 'https://reqres.in/api/users/1',
+                        type: 'PUT',
+                        data: formData,
+                        success: function(response) {
+                            document.getElementById('result').innerHTML = response;
+                        }
+                    });
+                });
+
+                // DELETE request
+                document.getElementById('delete-button').addEventListener('click', function() {
+                    $.ajax({
+                        url: 'https://reqres.in/api/users/2',
+                        type: 'DELETE',
+                        success: function(response) {
+                            document.getElementById('result').innerHTML = response;
+                        }
+                    });
+                });
+            </script>
         </div>
     </div>
 {% endblock %}
